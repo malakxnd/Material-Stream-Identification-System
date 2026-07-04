@@ -2,8 +2,6 @@
 
 A machine learning pipeline that classifies waste materials — **cardboard, glass, metal, paper, plastic, and trash** — from images and live webcam video. Built as the final project for the Machine Learning course, Faculty of Computers and Artificial Intelligence, Cairo University (Spring 2026).
 
-> 📄 Repository: [Material-Stream-Classifier](https://github.com/Cs-Jimmy/Material-Stream-Classifier/tree/main)
-
 ## Overview
 
 The system combines **handcrafted (HOG)** and **deep learned (ResNet50)** image features and feeds them into classical classifiers — **SVM** and **k-NN** — to identify the material type of an object. A real-time camera application then uses the trained SVM model to classify objects live from a webcam feed, with an "Unknown" rejection mechanism for low-confidence predictions.
@@ -24,6 +22,7 @@ This README walks through the full process end to end: setting up your environme
 ├── Report_and_Repo.pdf              # Full project report (methodology, results, discussion)
 ├── SVM report.pdf                   # SVM-specific report
 └── KNN report.pdf                   # k-NN-specific report
+└── dataset/
 ```
 
 The `models/` folder starts empty (or absent) in a fresh clone — it's populated automatically when you run the notebooks in Step 2 below.
